@@ -1,114 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignment2</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="shortcut icon" href="PHOTO-2025-04-08-00-21-42.jpg" type="image/x-icon">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="index.css" />
 </head>
 <body>
-    <header>
-        <nav>
-            <img src="me" alt="personal logo">
-            <ul>
-                <li>About</li>
-                <li>Work</li>
-                <li>Testimonials</li>
-                <li>Contact</li>
-                <li>light mode logo</li>
-                <li id="btn"><form method="get" action="file.doc"><button type="submit">Download CV</button></form></li>
-            </ul>
-        </nav>
-    </header>
 
-    <main>
-        <div id="introduction">
-            <h1>Hi, I'm Joshua</h1>
-            <p>I,m a front end developer with a focus on creating exceptional digital experiences that are fast, accessible, visually appealing, and responsive.
-                Even though I'm new to the field, I'm confident that I can learn and grow quickly. I'm also a team player, and I'm always up for a challenge.
-            </p>
-            <p><img src="" alt="locationicon">Lagos, Nigeria</p>
-            <p>
-                <ul>
-                    <li>Available for new projects</li>
-                </ul>
-            </p>
-            <img src="github" alt="github"><img src="" alt="twitter"><img src="" alt="figma">
-        </div>
-        <div id="About">
-            <h4>About me</h4>
-            <img src="" alt="me">
-            <h2>Curious about me? Here you have it:</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Qui enim, quasi cumque exercitationem dignissimos quas hic veritatis optio. 
-                Porro deserunt eligendi, non quisquam quidem atque sunt libero! 
-                Assumenda, aut vero?
-            </p>
-        </div>
-        <div id="skills">
-            <h4>Skills</h4>
-            <p>The skills, tools and technologies I am really good at</p>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-        </div>
-        <div id="Experience">
-            <h4>Experience</h4>
-            <p>Here is a summary of my most recent experiences</p>
-            <div class="subExperience">
-                <h3>Student</h3>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing</li>
-                </ul>
-            </div>
-            <div class="subExperience">
-                <h3>Intern</h3>
-                <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing</li>
-                    <li>Lorem ipsum dolor sit amet consectetur adipisicing</li>
-                </ul>
-            </div>
-        </div>
-        <div id="work">
-            <h4>Work</h4>
-            <p>Some of the noteworthy projects I have worked on</p>
-            <div class="project">
-                <img src="" alt="screenshot of assignment 1">
-                <p>detailing</p>
-            </div>
-            <div class="project">
-                <img src="" alt="screenshot of assignment 2">
-                <p>detailing</p>
-            </div>
-            <div class="project">
-                <img src="" alt="screenshot of asiignment 3">
-                <p>detailing</p>
-            </div>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">YourName</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        </div>
-        <div id="Testimonials">
-            <h4>Testimonials</h4>
-        </div>
-        <div id="contact">
-            <h4>Get In touch</h4>
-            <p>What's next? Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect.</p>
-            <p><img src="" alt="">jkalu6979@gmail.com <button type="submit"><img src="" alt="copy"></button></p>
-            <p><img src="" alt="">+2348064270255 <button type="submit"><img src="" alt="copy"></button></p>
-            <p>You may also find me on these platforms!</p>
-            <a href=""><img src="github" alt="github"></a> <a href="twitter"><img src="" alt="twitter"></a> <a href="figma"><img src="" alt="figma"></a>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; 2025 | Designed by Joshua Kalu</p>    
-    </footer>
+  <section class="hero">
+    <div class="hero-content">
+      <h2>Hello, I'm <span class="highlight">Your Name</span></h2>
+      <p>A passionate <strong>Frontend Developer</strong> building responsive websites and web apps.</p>
+      <a href="#projects" class="btn">View Projects</a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Write a short bio about your background, skills, and goals here.</p>
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>Project Title 1</h3>
+        <p>Brief description of what this project does and what tech was used.</p>
+        <a href="#">View Project</a>
+      </div>
+      <div class="project-card">
+        <h3>Project Title 2</h3>
+        <p>Another description. Add more cards as needed.</p>
+        <a href="#">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Feel free to reach out through the form below or via social media.</p>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>

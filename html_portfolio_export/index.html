@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dark-mode-toggle">
+    <label class="switch">
+      <input type="checkbox" id="toggleDark" />
+      <span class="slider"></span>
+    </label>
+    <span>Dark Mode</span>
+  </div>
+
+  <header>
+    <div class="container header-container">
+      <h1 class="logo">My Portfolio</h1>
+      <nav>
+        <a href="#hero">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero-section">
+      <div class="container hero-content">
+        <h2>Welcome to My Portfolio</h2>
+        <p>I'm a passionate developer creating beautiful and functional web experiences.</p>
+        <a href="#projects" class="btn-primary">View My Work</a>
+      </div>
+    </section>
+
+    <section id="about" class="about-section container">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <img src="/images/istockphoto-1300845620-612x612.jpg" alt="About Me" />
+        <p>Hi, I'm Joshua &#128075;. I,m a front end developer with a focus on creating exceptional digital experiences that are fast, accessible, visually appealing, and responsive.
+                Even though I'm new to the field, I'm confident that I can learn and grow quickly. I'm also a team player, and I'm always up for a challenge.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills" class="skills-section container">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li><img src="/images/images.png" alt="HTML5"></li>
+        <li><img src="/images/css3-logo-png-transparent.png" alt="CSS3"></li>
+        <li><img src="/images/JavaScript-Symbol.png" alt="JavaScript"></li>
+        <li><img src="/images/sql-database-icon-logo-design-ui-or-ux-app-png.webp" alt="SQL"></li>
+        <li><img src="/images/GitHub-logo.png" alt="GitHub"></li>
+      </ul>
+    </section>
+
+    <section id="experience" class="experience-section container">
+      <h2>Experience</h2>
+      <div class="experience-timeline">
+        <div class="timeline-item">
+          <h3>Student</h3>
+          <span><a href="https://babcock.edu.ng">Babcock Univerity</a> | 2022 - Present</span>
+          <p>I am currently in my third year as a Software Engineering student in Babcock University and I am optimistic about my future as a Software Engineer</p>
+        </div>
+        <div class="timeline-item">
+          <h3>Software Engineer Intern</h3>
+          <span><a href="https://ha-shem.com">Ha-Shem Limited</a> | 2025</span>
+          <p>Learned while assisting in building company website and maintained internal tools.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="projects-section container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="/images/Screenshot 2025-04-25 053803.png" alt="Project 1" />
+          <h3>Project One</h3>
+          <p>I tried replicating a webpage I found interesting.</p>
+        </div>
+        <!-- <div class="project-card">
+          <img src="https://via.placeholder.com/400x200" alt="Project 2" />
+          <h3>Project Two</h3>
+          <p>An e-commerce site with a modern design.</p>
+        </div>
+        <div class="project-card">
+          <img src="https://via.placeholder.com/400x200" alt="Project 3" />
+          <h3>Project Three</h3>
+          <p>A portfolio website template for creatives.</p>
+        </div>
+      </div>-->
+    </section>
+
+    <section id="testimonials" class="testimonials-section container">
+      <h2>Testimonials</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p>"Great to work with, very professional and skilled."</p>
+          <span>- Client A</span>
+        </div>
+        <div class="testimonial-card">
+          <p>"Delivered the project on time and exceeded expectations."</p>
+          <span>- Client B</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section container">
+      <h2>Contact</h2>
+      <form id="contactForm">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="submit" class="btn-primary">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Joshua Uwaoma Kalu. All rights reserved.</p>
+    <p>@ jkalu6979@gmail.com</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
