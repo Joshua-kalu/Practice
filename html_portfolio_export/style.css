@@ -9,8 +9,8 @@
 
 body {
   font-family: 'Poppins', Arial, sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: #fff;
+  color: #000;
   line-height: 1.6;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -22,7 +22,7 @@ body {
 }
 
 header {
-  background-color: #222;
+  background-color: #000;
   color: #fff;
   padding: 1rem 0;
   position: sticky;
@@ -52,14 +52,17 @@ nav a {
 }
 
 nav a:hover {
-  color: #1e90ff;
+  color: #d0d0d0;
 }
 
 .hero-section {
-  background: linear-gradient(rgba(30, 144, 255, 0.8), rgba(30, 144, 255, 0.8)), url('https://via.placeholder.com/1200x500') no-repeat center center/cover;
+  border-bottom-left-radius: 30px;
+  background: #000 url('https://via.placeholder.com/1200x500') no-repeat center center/cover;
   color: #fff;
   padding: 6rem 0;
   text-align: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .hero-content h2 {
@@ -75,9 +78,14 @@ nav a:hover {
   margin-left: auto;
   margin-right: auto;
 }
+.hero-content p.btn-primary a{
+  text-decoration: none;
+  color: white;
+  width: 80px;
+}
 
 .btn-primary {
-  background-color: #1e90ff;
+  background-color: #000;
   color: #fff;
   padding: 0.75rem 2rem;
   border: none;
@@ -90,13 +98,20 @@ nav a:hover {
 }
 
 .btn-primary:hover {
-  background-color: #0d6efd;
+  background-color: #333;
 }
 
 .about-section {
+  border-radius: 30px;
   padding: 4rem 0;
 }
 
+.about-section h2{
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: #000;
+}
 .about-content {
   display: flex;
   flex-wrap: wrap;
@@ -116,17 +131,19 @@ nav a:hover {
   flex: 2 1 400px;
   font-size: 1.1rem;
   line-height: 1.8;
+  color: #000;
 }
 
 .skills-section {
-  background-color: #f0f4f8;
+  border-radius: 30px;
+  background-color: #fff;
   padding: 4rem 0;
 }
 #skills h2 {
   text-align: center;
   margin-bottom: 2rem;
   font-weight: 700;
-  color: #222;
+  color: #000;
 }
 
 .skills-list {
@@ -138,23 +155,33 @@ nav a:hover {
 }
 
 .skills-list li {
-  background-color: #1e90ff;
+  background-color: #dcdcdc;
   color: white;
   padding: 0.5rem 1.5rem;
   border-radius: 20px;
   font-weight: 500;
-  box-shadow: 0 2px 5px rgba(30,144,255,0.4);
+  box-shadow: 0 2px 5px rgba(0,0,0,0.4);
 }
 .skills-list img  {
     height: 60px;
 }
+.skills-list img#git{
+  border-radius: 20px;
+}
 
 .experience-section {
+  border-radius: 30px;
   padding: 4rem 0;
+}
+.experience-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: #000;
 }
 
 .experience-timeline {
-  border-left: 3px solid #1e90ff;
+  border-left: 3px solid #000;
   margin-left: 1rem;
   padding-left: 1.5rem;
 }
@@ -166,7 +193,7 @@ nav a:hover {
 
 .timeline-item h3 {
   font-weight: 600;
-  color: #1e90ff;
+  color: #000;
 }
 
 .timeline-item span {
@@ -182,52 +209,72 @@ nav a:hover {
 
 .timeline-item p {
   font-size: 1rem;
-  color: #444;;
+  color: #000;
 }
 
 .projects-section {
-  background-color: #f0f4f8;
+  border-radius: 30px;
+  background-color: #fff;
   padding: 4rem 0;
 }
-
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-  gap: 2rem;
+.projects-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: #000;
 }
 
 .project-card {
-  background-color: white;
-  border-radius: 10px;
+  display: flex;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 0;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
   overflow: hidden;
   transition: transform 0.3s ease;
+  background-color: #dcdcdc;
+  padding: 10px;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
 }
-
-.project-card img {
-  width: 100%;
+.project-image {
+  background-color: #888;
+}
+.project-image img {
+  width: 550px;
   height: auto;
-  object-fit: cover;
 }
 
-.project-card h3 {
+.project-text {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.project-text h3 {
   margin: 1rem;
   font-weight: 600;
-  color: #222;
+  color: #000;
+  text-align: center;
 }
 
-.project-card p {
+.project-text p {
   margin: 0 1rem 1rem 1rem;
-  color: #555;
+  color: #000;
   font-size: 0.95rem;
+  text-align: center;
 }
 
 .testimonials-section {
+  border-radius: 30px;
   padding: 4rem 0;
+}
+.testimonials-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  color: #000;
 }
 
 .testimonials-grid {
@@ -238,12 +285,12 @@ nav a:hover {
 }
 
 .testimonial-card {
-  background-color: #1e90ff;
+  background-color: #000;
   color: white;
   padding: 1.5rem;
   border-radius: 10px;
   max-width: 300px;
-  box-shadow: 0 4px 10px rgba(30,144,255,0.4);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
   font-style: italic;
   display: flex;
   flex-direction: column;
@@ -261,8 +308,22 @@ nav a:hover {
 }
 
 .contact-section {
-  background-color: #f0f4f8;
+  border-radius: 30px;
+  background-color: #fff;
   padding: 4rem 0;
+  margin-bottom: 30px;
+}
+.contact-section a{
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+  margin: auto;
+}
+
+.contact-section h2{
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #000;
 }
 
 #contactForm {
@@ -275,28 +336,30 @@ nav a:hover {
 
 #contactForm label {
   font-weight: 600;
-  color: #333;
+  color: #000;
 }
 
 #contactForm input,
 #contactForm textarea {
   padding: 0.75rem;
-  border: 1px solid #ccc;
+  border: 1px solid #000;
   border-radius: 6px;
   font-size: 1rem;
   font-family: 'Poppins', Arial, sans-serif;
   resize: vertical;
   transition: border-color 0.3s ease;
+  background-color: #fff;
+  color: #000;
 }
 
 #contactForm input:focus,
 #contactForm textarea:focus {
-  border-color: #1e90ff;
+  border-color: #000;
   outline: none;
 }
 
 #contactForm button {
-  background-color: #1e90ff;
+  background-color: #000;
   color: white;
   border: none;
   padding: 0.75rem;
@@ -308,10 +371,11 @@ nav a:hover {
 }
 
 #contactForm button:hover {
-  background-color: #0d6efd;
+  background-color: #333;
 }
+
 footer {
-  background-color: #222;
+  background-color: #000;
   color: #fff;
   text-align: center;
   padding: 1rem 0;
@@ -326,6 +390,7 @@ footer {
   align-items: center;
   gap: 0.5rem;
   z-index: 1100;
+  color: #fff;
 }
 
 .switch {
@@ -366,7 +431,7 @@ footer {
 }
 
 input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #000;
 }
 
 input:checked + .slider:before {
@@ -375,31 +440,93 @@ input:checked + .slider:before {
 
 body.dark-mode {
   background-color: #121212;
-  color: #f4f4f4;
+  color: #f0f0f0;
 }
 
 body.dark-mode header {
   background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: #f0f0f0;
 }
 
 body.dark-mode footer {
   background-color: #1e1e1e;
+  color: #f0f0f0;
 }
 
 body.dark-mode nav a {
-  color: #f4f4f4;
+  color: #f0f0f0;
 }
 
 body.dark-mode nav a:hover {
-  color: #63a4ff;
+  color: #d0d0d0;
 }
 
 body.dark-mode .skills-list li {
-  background-color: #63a4ff;
-  box-shadow: 0 2px 5px rgba(99,164,255,0.6);
+  background-color: #333;
+  box-shadow: 0 2px 5px rgba(80,80,80,0.6);
+  color: #f0f0f0;
 }
 
 body.dark-mode .testimonial-card {
-  background-color: #63a4ff;
-  box-shadow: 0 4px 10px rgba(99,164,255,0.6);
+  background-color: #333;
+  box-shadow: 0 4px 10px rgba(80,80,80,0.6);
+  color: #f0f0f0;
+}
+
+body.dark-mode .timeline-item span,
+body.dark-mode .timeline-item span a {
+  color: #e0e0e0;
+}
+
+body.dark-mode .timeline-item p {
+  color: #f0f0f0;
+}
+
+body.dark-mode .timeline-item h3 {
+  color: #f0f0f0;
+}
+
+body.dark-mode .about-content p {
+  color: #f0f0f0;
+}
+
+body.dark-mode .project-card h3,
+body.dark-mode .project-card p {
+  color: #f0f0f0;
+}
+
+body.dark-mode .contact-section h2,
+body.dark-mode #contactForm label,
+body.dark-mode #contactForm input,
+body.dark-mode #contactForm textarea {
+  color: #f0f0f0;
+}
+
+body.dark-mode #contactForm input,
+body.dark-mode #contactForm textarea {
+  background-color: #222;
+  border-color: #444;
+}
+
+body.dark-mode #contactForm input:focus,
+body.dark-mode #contactForm textarea:focus {
+  border-color: #888;
+}
+
+body.dark-mode #contactForm button {
+  background-color: #444;
+  color: #f0f0f0;
+}
+
+body.dark-mode #contactForm button:hover {
+  background-color: #666;
 }

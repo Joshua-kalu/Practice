@@ -36,7 +36,7 @@
       <div class="container hero-content">
         <h2>Welcome to My Portfolio</h2>
         <p>I'm a passionate developer creating beautiful and functional web experiences.</p>
-        <a href="#projects" class="btn-primary">View My Work</a>
+        <p id="btn" class="btn-primary"><a href="Kalu-Joshua-Uwaoma-Resume.pdf" download="Kalu Joshua Uwaoma Resume">Download CV</a></p>
       </div>
     </section>
 
@@ -44,7 +44,7 @@
       <h2>About Me</h2>
       <div class="about-content">
         <img src="/images/istockphoto-1300845620-612x612.jpg" alt="About Me" />
-        <p>Hi, I'm Joshua &#128075;. I,m a front end developer with a focus on creating exceptional digital experiences that are fast, accessible, visually appealing, and responsive.
+        <p>Hello, I'm Joshua &#128075;. I'm a front end developer with a focus on creating exceptional digital experiences that are fast, accessible, visually appealing, and responsive.
                 Even though I'm new to the field, I'm confident that I can learn and grow quickly. I'm also a team player, and I'm always up for a challenge.
         </p>
       </div>
@@ -57,7 +57,7 @@
         <li><img src="/images/css3-logo-png-transparent.png" alt="CSS3"></li>
         <li><img src="/images/JavaScript-Symbol.png" alt="JavaScript"></li>
         <li><img src="/images/sql-database-icon-logo-design-ui-or-ux-app-png.webp" alt="SQL"></li>
-        <li><img src="/images/GitHub-logo.png" alt="GitHub"></li>
+        <li><img src="/images/GitHub-logo.png" alt="GitHub" id="git"></li>
       </ul>
     </section>
 
@@ -80,22 +80,15 @@
     <section id="projects" class="projects-section container">
       <h2>Projects</h2>
       <div class="projects-grid">
-        <div class="project-card">
-          <img src="/images/Screenshot 2025-04-25 053803.png" alt="Project 1" />
-          <h3>Project One</h3>
-          <p>I tried replicating a webpage I found interesting.</p>
+        <div class="project-card">          
+          <div class="project-image">
+            <img src="/images/Screenshot 2025-04-25 053803.png" alt="Project 1" />
+          </div>
+          <div class="project-text"><h3>Project One</h3>
+            <p>I tried replicating a webpage I found interesting.</p></span>
+          </div>
         </div>
-        <!-- <div class="project-card">
-          <img src="https://via.placeholder.com/400x200" alt="Project 2" />
-          <h3>Project Two</h3>
-          <p>An e-commerce site with a modern design.</p>
-        </div>
-        <div class="project-card">
-          <img src="https://via.placeholder.com/400x200" alt="Project 3" />
-          <h3>Project Three</h3>
-          <p>A portfolio website template for creatives.</p>
-        </div>
-      </div>-->
+      </div>
     </section>
 
     <section id="testimonials" class="testimonials-section container">
@@ -111,22 +104,13 @@
         </div>
       </div>
     </section>
+    
+      <section id="contact" class="contact-section container">
+      <a href="Untitled-1.html">Want to send me a message? Click any where within this text.</a>
+      </section>
+  
 
-    <section id="contact" class="contact-section container">
-      <h2>Contact</h2>
-      <form id="contactForm">
-        <label for="name">Name</label>
-        <input type="text" id="name" name="name" required />
-
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required />
-
-        <label for="message">Message</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
-
-        <button type="submit" class="btn-primary">Send Message</button>
-      </form>
-    </section>
+    
   </main>
 
   <footer>
